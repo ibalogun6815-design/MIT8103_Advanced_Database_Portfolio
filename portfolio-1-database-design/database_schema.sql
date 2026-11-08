@@ -27,3 +27,22 @@ CREATE TABLE Accounts (
         REFERENCES Customers(customer_id)
 );
 
+
+-- Table 3: Transactions
+CREATE TABLE Transactions (
+    transaction_id INT PRIMARY KEY,
+    account_id INT NOT NULL,
+    transaction_type VARCHAR(20) NOT NULL,
+    amount DECIMAL(15,2) NOT NULL,
+    transaction_status VARCHAR(20) NOT NULL DEFAULT 'Successful',
+    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    description VARCHAR(100),
+
+    FOREIGN KEY (account_id)
+        REFERENCES Accounts(account_id),
+
+    CHECK (amount > 0),
+    CHECK (transaction_type IN ('Deposit', 'Withdrawal', 'Transfer'))
+);
+
+
