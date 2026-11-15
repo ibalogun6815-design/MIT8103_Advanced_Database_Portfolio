@@ -39,7 +39,7 @@ The exercise also reinforced the importance of data integrity, consistency, avai
 
 ### 4. Repository and Evidence
 
-**GitHub Repository:** [Insert your GitHub repository URL]
+**GitHub Repository:** https://github.com/ibalogun6815-design/MIT8103_Advanced_Database_Portfolio
 
 The repository contains the five portfolio components, supporting scripts, database models, documentation, and implementation examples. Screenshots and execution evidence should be included where available to demonstrate the work performed.
 
