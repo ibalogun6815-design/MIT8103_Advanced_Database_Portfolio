@@ -1,0 +1,23 @@
+{
+  "_id": "CUST-0001",
+  "firstName": "Amina",
+  "lastName": "Yusuf",
+  "email": "amina.yusuf@example.com",
+  "profileStatus": "active",
+  "accounts": [
+    {
+      "accountNumber": "1000000001",
+      "accountType": "Savings",
+      "currency": "NGN"
+    },
+    {
+      "accountNumber": "1000000002",
+      "accountType": "Current",
+      "currency": "NGN"
+    }
+  ],
+  "preferences": {
+    "statementChannel": "email",
+    "language": "en"
+  }
+}
